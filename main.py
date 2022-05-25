@@ -6,10 +6,8 @@ def cifra():
     p = str(input('Vai adicionar outro número?\n'))
     if p == 'y':
         cifra()
-    if p == 'n':
-        print('Este são os números: {}.'.format(res))
     else:
-        print('Não entendi!')
+        print('Este são os números: {}'.format(res))
 
 
 
