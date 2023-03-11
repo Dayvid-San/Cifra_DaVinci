@@ -10,6 +10,7 @@ def cifra(lista = []):
     num = int(input('Qual o número?\n'))
     lista.append(num)
 
+
     p = str(input('Vai adicionar outro número?\n'))
     if p == 'y':
         cifra()
@@ -20,9 +21,13 @@ def cifra(lista = []):
         for i in lista:
             restor = i * '{}'.format(aux)
             aux += 1
-            return listFound.append(restor)
+            listFound.append(restor)
+        
+    # unir números do input aos números gerados
 
-        print('Este são os números: {}'.format(listFound))
+    
+        resultado =''.join(listFound)
+        print(resultado.split(','))
 
 
 cifra()
